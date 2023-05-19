@@ -19,7 +19,7 @@ namespace sebelas_warehouse
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (nama.Text == "" && email.Text == "" && password.Text == "")
+            if (nama.Text == "" && nip.Text == "" && email.Text == "")
             {
                 MessageBox.Show("Tolong isi Data Nama, Email dan Password");
             }
@@ -40,9 +40,9 @@ namespace sebelas_warehouse
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            password.UseSystemPasswordChar = false;
+            email.UseSystemPasswordChar = false;
 
-            password.UseSystemPasswordChar = true;
+            email.UseSystemPasswordChar = true;
         }
     }
 }
